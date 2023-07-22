@@ -1,0 +1,43 @@
+{% extends 'CMT/base.html' %}
+
+{% block title %}UpdateBlog|{% endblock %}
+
+{% block body %}
+<div class="container my-5 " style="border:2px pink; border-radius: 10px; ">
+    <div class="row" >
+        <div class="col-lg-6 flex bg-light" style='margin-left:300px;'>
+            <h2 align="center" class="alert bg-primary mt-3" style="color: white;">Blog View</h2>
+                <table class="table">
+                    <tr>
+                        <th>Image</th>
+                        <td> <img src="/media/{{emp.Image}}" height="150px" width="120px" class="img-rounded" alt="Cinque Terre"></td>
+                    </tr>
+                    <<<!--div style="margin: 10px auto;">
+                        <video autoplay="autoplay" controls="controls" preload="preload">
+                            <source src="{{ MEDIA_URL }}/{{ Video }}" type="video/mp4"></source>
+                        </video>
+                    </div>-->>
+                    <tr>
+                        <th>Name</th>
+                        <td> {{emp.Name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Video</th>
+                        <td> {{emp.Video}}</td>
+                    </tr>
+                    <tr>
+                        <th>Text</th>
+                        <td>{{emp.Text}}</td>
+                    </tr>
+                    <tr>
+                        <th><a href='/' style='margin-left:180px;'><button type="submit" class="btn btn-info">BACK</button></a> </ht>
+                    </tr>
+                </table
+                
+        </div>
+        
+    </div>
+
+</div>
+
+{% endblock %}
